@@ -10,11 +10,13 @@ fun main() {
     |Введите номер действия и нажмите Enter""".trimMargin()
 
     var cityList : ArrayList<String> = arrayListOf()
+    /*
     cityList.add("Москва")
     cityList.add("Тюмень")
     cityList.add("Москва")
     cityList.add("Томск")
     cityList.add("Тюмень")
+     */
     var exit : Boolean = false
     var action : String?
     do{
