@@ -1,4 +1,4 @@
-fun main(){
+fun main(args:Array<String>){
     var array: Array<String> = arrayOf("Иван", "Николай" , "Иван", "Петр" , "Максим")
     count(*array)
 

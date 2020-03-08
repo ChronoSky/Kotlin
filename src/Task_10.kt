@@ -1,4 +1,4 @@
-fun main() {
+fun main(args:Array<String>) {
 
     println("Вы запустили программу 'Города'")
     var info : String = """Список доступных действий : 

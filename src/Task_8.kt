@@ -1,4 +1,4 @@
-fun main() {
+fun main(args:Array<String>) {
 
     println("Введите сумму вклада")
     var rl = readLine()!!

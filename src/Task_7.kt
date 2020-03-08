@@ -1,4 +1,4 @@
-fun main() {
+fun main(args:Array<String>) {
 
     var mark: Int = 0
     var answer : String?
