@@ -1,13 +1,15 @@
+package Task_18
+
 fun main(args: Array<String>) {
 
-    val air_1 = AirCraft2(737, 3000.0, 48600.0)
+    val air_1 = AirCraft(737, 3000.0, 48600.0)
     println(air_1.fuelRate)
 
-    val air_2 = AirCraft2(777, 6000.0, 48600.0)
+    val air_2 = AirCraft(777, 6000.0, 48600.0)
     println(air_2.fuelRate)
 }
 
-class AirCraft2(num : Int, airLength : Double, tankVolume : Double){
+private class AirCraft(num : Int, airLength : Double, tankVolume : Double){
 
     // номер судна
     var num : Int = num

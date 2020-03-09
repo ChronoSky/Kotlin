@@ -1,10 +1,12 @@
+package Task_20
+
 fun main(){
     var b1 = Boing747(777, 6000.0, 48600.0)
     println(b1.fuelRate)
     println(b1.seats)
 }
 
-open class AirCraft3(num : Int, airLength : Double, tankVolume : Double){
+open class AirCraft(num : Int, airLength : Double, tankVolume : Double){
 
     // номер судна
     open var num : Int = num
@@ -21,8 +23,8 @@ open class AirCraft3(num : Int, airLength : Double, tankVolume : Double){
 
 }
 
-class Boing747(num : Int, airLength : Double, tankVolume : Double) :  AirCraft3(num , airLength , tankVolume ){
+class Boing747(num : Int, airLength : Double, tankVolume : Double ) :  AirCraft(num , airLength , tankVolume ), Passenger{
 
-    var seats: Int = 386
+    override val seats: Int = 386
 
 }
