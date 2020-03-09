@@ -1,25 +1,24 @@
 fun main(args: Array<String>) {
 
-    val air_1 = AirCraft(737, 3000.0, 48600.0)
-    println(air_1.fuelRate)
+    val air = AirCraft()
+    println(air.fuelRate)
 
-    val air_2 = AirCraft(777, 6000.0, 48600.0)
-    println(air_2.fuelRate)
 }
 
-class AirCraft(num : Int, airLength : Double, tankVolume : Double){
+class AirCraft {
 
     // номер судна
-    var num : Int = num
+    var num : Int = 737
 
     // максимальная дальность полета
-    var airLength : Double = airLength
+    var airLength : Double = 3000.0
 
     // объем бака
-    private val tankVolume : Double = tankVolume
+    private val tankVolume : Double = 46200.0
 
     // расход топлива на 100 км
     val fuelRate : Double
-    get() = tankVolume*100/airLength
+        get() = tankVolume*100/airLength
 
 }
+
