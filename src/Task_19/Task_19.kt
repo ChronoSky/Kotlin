@@ -1,9 +1,10 @@
 package Task_19
 
 fun main(){
-    var b1 = Boing747(777, 6000.0, 48600.0)
+    var b1 = Boing747(777, 6000.0, 48600.0, 386)
     println(b1.fuelRate)
     println(b1.seats)
+
 }
 
 open class AirCraft(num : Int, airLength : Double, tankVolume : Double){
@@ -23,8 +24,11 @@ open class AirCraft(num : Int, airLength : Double, tankVolume : Double){
 
 }
 
-class Boing747(num : Int, airLength : Double, tankVolume : Double) :  AirCraft(num , airLength , tankVolume ){
+class Boing747(num : Int, airLength : Double, tankVolume : Double, seats : Int) :  AirCraft(num , airLength , tankVolume ){
 
-    var seats: Int = 386
+    var seats: Int = 0
+    init{
+       this.seats = seats
+    }
 
 }

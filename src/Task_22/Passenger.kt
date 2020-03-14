@@ -1,4 +1,4 @@
-package Task_20
+package Task_22
 
 interface Passenger {
     val seats : Int

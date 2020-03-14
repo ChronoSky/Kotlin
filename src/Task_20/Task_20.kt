@@ -9,16 +9,16 @@ fun main(){
 open class AirCraft(num : Int, airLength : Double, tankVolume : Double){
 
     // номер судна
-    open var num : Int = num
+    var num : Int = num
 
     // максимальная дальность полета
-    open var airLength : Double = airLength
+    var airLength : Double = airLength
 
     // объем бака
-    open val tankVolume : Double = tankVolume
+    val tankVolume : Double = tankVolume
 
     // расход топлива на 100 км
-    open val fuelRate : Double
+    val fuelRate : Double
         get() = tankVolume*100/airLength
 
 }
