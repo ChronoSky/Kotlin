@@ -2,12 +2,12 @@ package Task_22
 
 fun main(args: Array<String>){
 
-    var b1 : Boing747 = Boing747(737, 6000.0, 48600.0, 0)
+    var b1 : Boing747 = Boing747(737, 6000.0, 48600.0)
     b1.print()
 
 }
 
-class Boing747(num: Int, airLength: Double, tankVolume: Double, num1: Int): AirCraft(), Passenger {
+class Boing747(num: Int, airLength: Double, tankVolume: Double): AirCraft(), Passenger {
 
     override val seats: Int = 386
 
